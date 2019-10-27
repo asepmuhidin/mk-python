@@ -1,0 +1,22 @@
+import math;
+
+a=input("input nilai a?")
+b=input("input nilai b?")
+c=input("input nilai c?")
+
+d=b**2-(4*a*c)
+if d>0:
+    kondisi="x1 dan x2 akar real"
+    x1=(-b+math.sqrt(d))/(2*a)
+    x2=(-b-math.sqrt(d))/(2*a)
+elif d==0:
+    kondisi="x1 sama dengan x2"
+    x1=(-b+math.sqrt(d))/(2*a)
+    x2=x1
+else:
+    kondisi="x1 dan x2 akar imajiner"
+    x1=x2=0
+
+print(kondisi)
+print("x1="+ str(x1))
+print("x2="+ str(x2))
