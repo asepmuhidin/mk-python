@@ -1,0 +1,26 @@
+nama=['David','Aziz','Aning','Priska','Farhan']
+
+print("Nama saya " + nama[0])
+nama[0]="Chika"
+print("Nama saya " + nama[0])
+
+nama[2]='Deris'
+
+print("Nama saya " + nama[2])
+
+myfans=nama[1:4]
+
+print(myfans)
+print("Fans sabil sejumlah " + str(len(myfans)) + " orang")
+nama[4]="Sabil"
+print(nama[4]*5)
+
+cari_aku="Prisila" in nama
+
+if(cari_aku):
+    print("Ada")
+else:
+    print("Tidak ada")    
+
+for nama_mhs in nama:
+    print(nama_mhs)
