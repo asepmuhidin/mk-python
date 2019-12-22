@@ -1,0 +1,38 @@
+def max(dic_data):
+    max=0
+    for key,val in dic_data.items():
+        if (val>max): max=val
+    return max
+
+def min(dic_data):
+    min=100000
+    for key,val in dic_data.items():
+        if (val<min): min=val
+    return min
+
+def avg(dic_data):
+    sum=0
+    for key,val in dic_data.items():
+        sum +=val
+    return sum/len(dic_data)    
+
+data={
+    'cindy' : 80,
+    'shinta' : 40,
+    'shania' : 50,
+    'twain' : 97,
+    'Leonardo' : 60,
+    'Ziko' : 80,
+}
+harga={
+    'pensil':1300,
+    'buku':2300,
+    'penghapus':500,
+    'penggaris':1000
+}
+print('Nilai min :' + str(min(data)))
+print('Harga min :' + str(min(harga)))
+print('Nilai max :' + str(max(data)))
+print('Harga max :' + str(max(harga)))
+print('Nilai rata-rata :' + str(avg(data)))
+print('Harga rata-rata :' + str(avg(harga)))
